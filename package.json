@@ -1,0 +1,22 @@
+{
+  "name": "docker_fccpd",
+  "version": "1.0.0",
+  "description": "Second Project for this semester's FCCPD course using Docker",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx tsc ; node dist/app",
+    "dev": "npx nodemon -L",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
