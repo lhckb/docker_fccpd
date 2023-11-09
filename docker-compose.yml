@@ -4,3 +4,14 @@ services:
     command: sh -c "npm run dev"
     ports:
       - 3000:3000
+    depends_on:
+      - database
+
+  database:
+    build: ./sql/
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - 5431:5432
