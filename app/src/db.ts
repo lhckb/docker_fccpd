@@ -1,8 +1,3 @@
-import * as mysql from 'mysql2';
+import { PrismaClient } from '@prisma/client';
 
-export const connection = mysql.createConnection({
-    host: 'mysql',
-    user: 'root',
-    password: 'root',
-    database: 'db'
-});
+export const prisma = new PrismaClient();

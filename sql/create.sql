@@ -1,13 +1,13 @@
 use db;
 
 CREATE TABLE people (
-	id int primary key,
+	id int primary key AUTO_INCREMENT,
 	first_name varchar(50),
 	last_name varchar(50)
 );
 
 CREATE TABLE cars (
-	id int primary key,
+	id int primary key AUTO_INCREMENT,
 	maker varchar(50),
 	model varchar(50),
 	model_year int,
@@ -15,7 +15,7 @@ CREATE TABLE cars (
 );
 
 CREATE TABLE sales (
-	id int primary key,
+	id int primary key AUTO_INCREMENT,
 	deal_value double precision,
 	person_id int,
 	car_id int,
