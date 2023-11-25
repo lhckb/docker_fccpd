@@ -129,7 +129,7 @@
 					"response": []
 				},
 				{
-					"name": "Read Sale",
+					"name": "Read Sale With Person and Car",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -143,6 +143,14 @@
 								"1"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Person With Sales",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
