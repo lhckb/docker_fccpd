@@ -102,5 +102,5 @@ export default class Router {
       let updated = await Controller.updateSale(id, body.deal_value);
       res.json({ data: updated });
     });
-    }
+  }
 }
